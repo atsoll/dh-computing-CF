@@ -17,11 +17,11 @@ app.config(function($routeProvider) {
 
     $routeProvider
     .when("/", {
-        templateUrl : "../views/overview.html"
+        templateUrl : "views/overview.html"
     }).when("/framework", {
-        templateUrl : "../views/framework.html",
+        templateUrl : "views/framework.html",
     }).when("/literature", {
-        templateUrl : "../views/literature.html",
+        templateUrl : "views/literature.html",
     })
 
 });
