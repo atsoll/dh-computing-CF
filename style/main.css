@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid;
   border-color: #011451;
   border-radius: 10px;
-  margin-bottom: 5vh; }
+  margin-bottom: 7vh; }
   .comp-desc .activity-title {
     font-size: 115%;
     color: #011451;
@@ -96,6 +96,11 @@ h1, h2, h3, h4, h5, h6 {
 .project-cat {
   color: #011451;
   font-weight: bold; }
+
+#project-groups ul {
+  margin-bottom: 2vh; }
+  #project-groups ul li {
+    margin-bottom: 1vh; }
 
 /*media queries*/
 /* Extra small devices (phones, 600px and down) */
