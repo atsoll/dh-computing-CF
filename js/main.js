@@ -1,5 +1,5 @@
 
-var prefix = ""
+var prefix = "/dh-computing-CF/"
 
 
 //for scale
@@ -17,11 +17,11 @@ app.config(function($routeProvider) {
 
     $routeProvider
     .when("/", {
-        templateUrl : "views/overview.html"
+        templateUrl : prefix + "views/overview.html"
     }).when("/framework", {
-        templateUrl : "views/framework.html",
+        templateUrl : prefix + "views/framework.html",
     }).when("/literature", {
-        templateUrl : "views/literature.html",
+        templateUrl : prefix + "views/literature.html",
     })
 
 });
