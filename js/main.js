@@ -1,5 +1,6 @@
 
 var prefix = "/dh-computing-CF/"
+//var prefix = ""
 
 
 //for scale
@@ -32,7 +33,18 @@ app.controller('ctrl', function($scope, $window, $document,  $anchorScroll) {
 
   $scope.model = {
     active_page: 'Overview',
-    menu: [{title: "Overview", link:"#!"}, {title: "Competency Framework", link:"#!framework"}, {title: "Related Literature", link:"#!literature"}]
+    menu: [{title: "Overview", link:"#!"}, {title: "Competency Framework", link:"#!framework"}]//, {title: "Related Literature", link:"#!literature"}]
+  }
+
+  //this is such a stupid way to do this
+  //I'm so dumb
+  this.$onInit = function () {
+    if(window.location.href.endsWith("framework")) {
+      $scope.model.active_page="Competency Framework"
+    }
+    else if (window.location.href.endsWith("literature")) {
+      $scope.model.active_page="Related Literature"
+    }
   }
 
 
