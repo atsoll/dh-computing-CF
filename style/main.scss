@@ -81,6 +81,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #d8e2f2;
   text-align: right;
 
+  a {
+    color: #011451;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 }
 
 
@@ -103,6 +109,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color:  #d8e2f2;
   width: 100%;
   text-align: right;
+
+  a {
+    color: #768db3;
+    cursor: pointer;
+  }
 
 }
 
@@ -153,6 +164,14 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
+}
+
+.lit-ex {
+  a{
+    :hover {
+      cursor: pointer;
+    }
+  }
 }
 
 

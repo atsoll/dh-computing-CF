@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 #navbar {
   background-color: #d8e2f2;
   text-align: right; }
+  #navbar a {
+    color: #011451;
+    text-decoration: none;
+    cursor: pointer; }
 
 .nav-button, #footer-content {
   font-size: 110%;
@@ -67,6 +71,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #d8e2f2;
   width: 100%;
   text-align: right; }
+  #footer-content a {
+    color: #768db3;
+    cursor: pointer; }
 
 .nav-button:hover {
   background-color: #bdc7d9 !important;
@@ -101,6 +108,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2vh; }
   #project-groups ul li {
     margin-bottom: 1vh; }
+
+.lit-ex a :hover {
+  cursor: pointer; }
 
 /*media queries*/
 /* Extra small devices (phones, 600px and down) */

@@ -1,6 +1,6 @@
 
-var prefix = "/dh-computing-CF/"
-//var prefix = ""
+//var prefix = "/dh-computing-CF/"
+var prefix = ""
 
 
 //for scale
