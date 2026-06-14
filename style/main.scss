@@ -4,17 +4,16 @@ $heading-font: 'Nunito';
 
 
 /*global things*/
-html, body {
-  height: 100%;
-  width: 100%;
+html {
   font-family: $body-font;
   overflow-x: hidden;
-  font-size: 17px;
+  height: 100%;
 
 }
 
 body {
   min-width: 99vh;
+  font-size: 17px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -179,6 +178,23 @@ h1, h2, h3, h4, h5, h6 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+  #navbar {
+    margin-bottom: 3vh;
+    height: 10vh;
+
+  }
+  #foot {
+    height: 10vh;
+  }
+
+
+
+  .nav-button {
+    padding-top: 4vh;
+    height: 10vh;
+    width: 50%;
+  }
+
 
 }
 
@@ -199,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   .nav-button {
     padding-top: 4vh;
     height: 10vh;
-    width: 33vw;
+    width: 50%;
   }
 
 }
@@ -220,8 +236,8 @@ h1, h2, h3, h4, h5, h6 {
   .nav-button {
 
     height: 8vh;
-    width: 20vw;
-    padding-top: 3vh
+    min-width: 33%;
+    padding-top: 3vh;
   }
 
 
