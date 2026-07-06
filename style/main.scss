@@ -13,9 +13,10 @@ html {
 
 body {
   min-width: 99vh;
-  font-size: 17px;
   font-family: $body-font;
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
@@ -39,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid;
   border-color: #011451;
   border-radius: 10px;
-  margin-bottom: 7vh;
+
 
 
   .activity-title {
@@ -69,11 +70,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.panel-body {
+  a:hover {
+    cursor: pointer;
+  }
+}
+
+.panel-title:focus {
+
+    outline: none;
+
+}
 
 
 .scroll-anchor:hover {
     text-decoration: underline !important;
-    cursor: pointer;
+    cursor: pointer !important;
 
 }
 
@@ -108,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 
   background-color:  #d8e2f2;
   width: 100%;
-  text-align: right;
+
 
   a {
     color: #768db3;
@@ -175,25 +187,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
 /*media queries*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
   #navbar {
     margin-bottom: 3vh;
-    height: 10vh;
+    height: 14vh;
+    font-size: 86%;
 
   }
   #foot {
     height: 10vh;
   }
 
+  body {
+    font-size: 27px;
+  }
+
+  .text-content {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-top: -2vh;
+  }
+
+  p {
+    padding-bottom: 3vh
+  }
+
 
 
   .nav-button {
     padding-top: 4vh;
-    height: 10vh;
+    height: 14vh;
     width: 50%;
+  }
+
+  .comp-desc {
+    margin-bottom: 9vh;
+  }
+
+  .panel-title {
+    font-size: 24px !important;
+  }
+
+  .lit-desc {
+    padding-top: 2vh;
+  }
+
+  #footer-content {
+    text-align: center;
   }
 
 
@@ -204,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 
   #navbar {
     margin-bottom: 3vh;
-    height: 10vh;
+    height: 15vh;
 
   }
   #foot {
@@ -215,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .nav-button {
     padding-top: 4vh;
-    height: 10vh;
+    height: 15vh;
     width: 50%;
   }
 
@@ -226,6 +271,7 @@ h1, h2, h3, h4, h5, h6 {
   #navbar {
     margin-bottom: 5vh;
     height: 8vh;
+    font-size: 100%;
   }
 
   #foot {
@@ -241,6 +287,20 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 3vh;
   }
 
+  body  {
+    font-size: 17px;
+  }
+  p {
+    padding-bottom: 1.5vh;
+  }
+
+  .comp-desc {
+    margin-bottom: 7vh;
+  }
+
+  #footer-content {
+    text-align: right;
+  }
 
 }
 

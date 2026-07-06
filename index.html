@@ -22,12 +22,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <!--scroll-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.min.js" integrity="sha512-1wYZXYWckZINGwEcMIjYjthjBO7w0vgbj4tqREKmbIj4Wy+v1GNcbi2A3Bh1OEHG9caYQg8mNtN89Btj9xubNw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.min.js" integrity="sha512-1wYZXYWckZINGwEcMIjYjthjBO7w0vgbj4tqREKmbIj4Wy+v1GNcbi2A3Bh1OEHG9caYQg8mNtN89Btj9xubNw==" crossorigin="anonymous"></script>
     <!--custom-->
     <script src = "js/main.js"></script>
     <link rel="stylesheet" href="./style/main.css">
   </head>
-  <body du-scroll-container id="scroll-container">
+  <body>
     <div id="navbar">
 
       <a href="{{page.link}}" class="nav-button" ng-repeat="page in model.menu" ng-class="model.active_page==page.title? 'menu-active' : '' " ng-style="" ng-click="model.active_page=page.title">{{page.title}}</a>

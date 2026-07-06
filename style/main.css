@@ -7,7 +7,6 @@ html {
 
 body {
   min-width: 99vh;
-  font-size: 17px;
   font-family: "Nunito"; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,8 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 3%;
   border: 2px solid;
   border-color: #011451;
-  border-radius: 10px;
-  margin-bottom: 7vh; }
+  border-radius: 10px; }
   .comp-desc .activity-title {
     font-size: 115%;
     color: #011451;
@@ -44,9 +42,15 @@ h1, h2, h3, h4, h5, h6 {
     color: #011451;
     font-weight: bolder; }
 
+.panel-body a:hover {
+  cursor: pointer; }
+
+.panel-title:focus {
+  outline: none; }
+
 .scroll-anchor:hover {
   text-decoration: underline !important;
-  cursor: pointer; }
+  cursor: pointer !important; }
 
 #navbar {
   background-color: #d8e2f2;
@@ -69,8 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 4vh;
   font-size: 90% !important;
   background-color: #d8e2f2;
-  width: 100%;
-  text-align: right; }
+  width: 100%; }
   #footer-content a {
     color: #768db3;
     cursor: pointer; }
@@ -117,33 +120,58 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 600px) {
   #navbar {
     margin-bottom: 3vh;
-    height: 10vh; }
+    height: 14vh;
+    font-size: 86%; }
 
   #foot {
     height: 10vh; }
 
+  body {
+    font-size: 27px; }
+
+  .text-content {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-top: -2vh; }
+
+  p {
+    padding-bottom: 3vh; }
+
   .nav-button {
     padding-top: 4vh;
-    height: 10vh;
-    width: 50%; } }
+    height: 14vh;
+    width: 50%; }
+
+  .comp-desc {
+    margin-bottom: 9vh; }
+
+  .panel-title {
+    font-size: 24px !important; }
+
+  .lit-desc {
+    padding-top: 2vh; }
+
+  #footer-content {
+    text-align: center; } }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #navbar {
     margin-bottom: 3vh;
-    height: 10vh; }
+    height: 15vh; }
 
   #foot {
     height: 10vh; }
 
   .nav-button {
     padding-top: 4vh;
-    height: 10vh;
+    height: 15vh;
     width: 50%; } }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #navbar {
     margin-bottom: 5vh;
-    height: 8vh; }
+    height: 8vh;
+    font-size: 100%; }
 
   #foot {
     height: 8vh; }
@@ -151,7 +179,19 @@ h1, h2, h3, h4, h5, h6 {
   .nav-button {
     height: 8vh;
     min-width: 33%;
-    padding-top: 3vh; } }
+    padding-top: 3vh; }
+
+  body {
+    font-size: 17px; }
+
+  p {
+    padding-bottom: 1.5vh; }
+
+  .comp-desc {
+    margin-bottom: 7vh; }
+
+  #footer-content {
+    text-align: right; } }
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
