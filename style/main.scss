@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  //min-width: 99vh;
+  min-width: 99vw;
   font-family: $body-font;
 }
 
@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 #navbar {
   background-color: #d8e2f2;
   text-align: right;
+  width: 100%;
 
   a {
     color: #011451;
@@ -101,16 +102,24 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+#button-container {
+  display: inline;
+}
+
 
 .nav-button, #footer-content {
   font-size: 110%;
-  display: inline-block;
   text-align: center;
   text-decoration: none;
   color:  #011451;
+  display:inline-block;
 
 
 }
+
+
+
+
 
 #footer-content {
   padding-top: 3vh;
@@ -195,16 +204,17 @@ h1, h2, h3, h4, h5, h6 {
 
   #navbar {
     margin-bottom: 3vh;
-    height: 14vh;
-    font-size: 86%;
+    height: 12vh;
+    font-size: 75%;
 
   }
+
   #foot {
     height: 10vh;
   }
 
   body {
-    font-size: 27px;
+    font-size: 18px;
   }
 
   .text-content {
@@ -214,15 +224,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   p {
-    padding-bottom: 3vh
+    padding-bottom: 3vh;
   }
 
 
 
   .nav-button {
-    padding-top: 4vh;
-    height: 14vh;
+    height: 12vh;
     width: 50%;
+    padding-top: 3vh;
   }
 
   .comp-desc {
@@ -230,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .panel-title {
-    font-size: 24px !important;
+    font-size: 18px !important;
   }
 
   .lit-desc {
@@ -247,22 +257,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-  #navbar {
+  /*#navbar {
     margin-bottom: 3vh;
     height: 15vh;
 
-  }
+  }*/
   #foot {
     height: 10vh;
   }
 
 
-
-  .nav-button {
-    padding-top: 4vh;
-    height: 15vh;
-    width: 50%;
-  }
 
 }
 
@@ -285,6 +289,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 8vh;
     min-width: 33%;
     padding-top: 3vh;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 
   body  {

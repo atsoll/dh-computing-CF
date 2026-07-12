@@ -29,8 +29,10 @@
   </head>
   <body>
     <div id="navbar">
+      <div id="button-container">
+          <a href="{{page.link}}" class="nav-button" ng-repeat="page in model.menu" ng-class="model.active_page==page.title? 'menu-active' : '' "  ng-click="model.active_page=page.title">{{page.title}}</a>
+      </div>
 
-      <a href="{{page.link}}" class="nav-button" ng-repeat="page in model.menu" ng-class="model.active_page==page.title? 'menu-active' : '' " ng-style="" ng-click="model.active_page=page.title">{{page.title}}</a>
     </div>
     <div id="view-content" class="col-md-12 col-sm-12 col-lg-12 col-xl-10 offset-xl-1">
       <ng-view class="col-md-10 col-md-offset-1" autoscroll="true"></ng-view>
